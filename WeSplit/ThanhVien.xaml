@@ -1,0 +1,261 @@
+﻿<Window x:Class="WeSplit.ThanhVien"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeSplit"
+        mc:Ignorable="d"
+        Title="Danh sách thành viên ( những chuyến đi đã tham gia)" Height="450" Width="800" Background="AliceBlue" WindowStartupLocation="CenterScreen">
+    <FlowDocumentReader UseLayoutRounding="True" SnapsToDevicePixels="True" ViewingMode="Scroll" >
+        <FlowDocumentReader.Resources>
+            <Style TargetType="TableCell">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </FlowDocumentReader.Resources>
+        <FlowDocument>
+            <Table CellSpacing="0">
+                <Table.Columns>
+                    <TableColumn/>
+                    <TableColumn/>
+                    <TableColumn/>
+                    <TableColumn/>
+                </Table.Columns>
+                <TableRowGroup>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold"></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Trần Binz</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Bùi Văn Châu </Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Nguyễn Thế Bảo</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">De Thị Cao</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Jolie Nguyễn </Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Sơn Tùng</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Dương Hồng Thanh</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Châu Đăng Khoa </Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph FontWeight="Bold">Cà Mau</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1" TextAlignment="Center">
+                            <Paragraph FontWeight="Bold">Hà Giang</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">Lạng Sơn</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">Phú Yên</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">Cù Lao Chàm</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph >X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">SaPa</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">APaChải</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph ></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph>X</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+            </Table>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Window>

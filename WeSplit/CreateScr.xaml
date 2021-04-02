@@ -1,0 +1,18 @@
+﻿<Window x:Class="WeSplit.CreateScr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeSplit"
+        mc:Ignorable="d"
+        Title="Tạo chuyến đi mới" Height="450" Width="554.786" Background="Bisque" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,3.6,3">
+        <Label Content="Nhập tên chuyến đi :" FontSize="17" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox x:Name="textName" Margin="128,31,203.4,344" RenderTransformOrigin="0.87,0.593"></TextBox>
+        <Label Content="Nhập tên thành viên :" Margin="0,91,355.4,281" FontSize="17" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox x:Name="text_tv" Margin="126,136,203.4,238"></TextBox>
+        <Label Content="Nhập các khoản chi :" Margin="0,198,355.4,175" FontSize="17" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox x:Name="text_khoanchi" Margin="124,242,203.4,132"></TextBox>
+        <Button Content="Lưu" Margin="182,338,263.4,42" Click="save_Button_Click" ></Button>
+    </Grid>
+</Window>

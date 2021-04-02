@@ -1,0 +1,59 @@
+﻿<Window x:Class="WeSplit.SaPa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:WeSplit"
+        mc:Ignorable="d"
+        Title="Sa Pa" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" Background="Beige" />
+        <Canvas Grid.Column="1" Background="AliceBlue" />
+        <lvc:PieChart Series="{Binding Data1}" LegendLocation="Bottom" DataClick="PieChart1_DataClick"
+                      Canvas.Left="10" Canvas.Top="239" Grid.Column="1" Margin="31.6,88,230.6,237.4">
+        </lvc:PieChart>
+        <Label Content="Di chuyển" FontWeight="Bold" Margin="70.6,238,282.6,194.4" Grid.Column="1"/>
+        <lvc:PieChart Series="{Binding Data2}" LegendLocation="Bottom" DataClick="PieChart2_DataClick"
+                      Canvas.Left="10" Canvas.Top="239" Grid.Column="1" Margin="123.6,282,119.6,43.4">
+        </lvc:PieChart>
+        <Label Content="Ăn uống" FontWeight="Bold" Margin="307.6,238,53.6,194.4" Grid.Column="1" />
+        <lvc:PieChart Series="{Binding Data3}" LegendLocation="Bottom" DataClick="PieChart3_DataClick"
+                      Canvas.Left="10" Canvas.Top="239" Grid.Column="1" Margin="252.6,88,9.6,237.4">
+        </lvc:PieChart>
+        <Label Content="Tiền phòng KS" FontWeight="Bold" Margin="178.6,427,153.6,0.4" Grid.Column="1" />
+        <Label Content="Biểu đồ thống kê góp quỹ" FontSize="30" Grid.Row="0" Margin="9.6,10,24.6,382.4" Grid.Column="1"/>
+        <Label Content="Chi tiết chuyến phượt Sa Pa" FontSize="20" FontWeight="DemiBold" Margin="0,0,0.4,375"/>
+        <Label Content="*Thành viên tham gia" FontWeight="Medium" Margin="10,45,129.4,338"
+               FontSize="15"  />
+        <ListView Margin="50,80,80.4,317.4" Name="lvDataBinding">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Name}" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Content="*Các địa điểm đã đi" FontWeight="Medium" Margin="10,158,129.4,229"
+               FontSize="15"  />
+        <ListView Margin="50,212,50.4,92.4" Name="area_lvDataBinding">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Area}" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Content="*Hình ảnh chuyến đi" FontWeight="Medium" Margin="10,408,192.4,10.4"
+               FontSize="15" RenderTransformOrigin="0.532,0.213" />
+        <Label Content="Xem ảnh" Margin="163,413,135.4,10.4"
+               FontSize="10" FontStyle="Italic"
+               MouseDoubleClick="Image_MouseDoubleClick" />
+    </Grid>
+</Window>

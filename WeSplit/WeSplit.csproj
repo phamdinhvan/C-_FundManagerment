@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87495ADA-D4F1-4AC0-B0F4-7C498D7D300F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WeSplit</RootNamespace>
+    <AssemblyName>WeSplit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CreateScr.xaml.cs">
+      <DependentUpon>CreateScr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CuLaoCham.xaml.cs">
+      <DependentUpon>CuLaoCham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DaNang.xaml.cs">
+      <DependentUpon>DaNang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DaNangUpdated.xaml.cs">
+      <DependentUpon>DaNangUpdated.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DSUngTien.xaml.cs">
+      <DependentUpon>DSUngTien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageCLC.xaml.cs">
+      <DependentUpon>ImageCLC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageDN.xaml.cs">
+      <DependentUpon>ImageDN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageLS.xaml.cs">
+      <DependentUpon>ImageLS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageSP.xaml.cs">
+      <DependentUpon>ImageSP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LangSon.xaml.cs">
+      <DependentUpon>LangSon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SaPa.xaml.cs">
+      <DependentUpon>SaPa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchScr.xaml.cs">
+      <DependentUpon>SearchScr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhVien.xaml.cs">
+      <DependentUpon>ThanhVien.xaml</DependentUpon>
+    </Compile>
+    <Page Include="APaChai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CaMau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateScr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CuLaoCham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DaNang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DaNangUpdated.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DSUngTien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HaGiang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeScr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageApachai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageCLC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageCM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageDN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageHG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageLS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImagePY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageSP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LangSon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="APaChai.xaml.cs">
+      <DependentUpon>APaChai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaMau.xaml.cs">
+      <DependentUpon>CaMau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HaGiang.xaml.cs">
+      <DependentUpon>HaGiang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScr.xaml.cs">
+      <DependentUpon>HomeScr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageApachai.xaml.cs">
+      <DependentUpon>ImageApachai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageCM.xaml.cs">
+      <DependentUpon>ImageCM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageHG.xaml.cs">
+      <DependentUpon>ImageHG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePY.xaml.cs">
+      <DependentUpon>ImagePY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PhuYen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SaPa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchScr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThanhVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PhuYen.xaml.cs">
+      <DependentUpon>PhuYen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\himalaya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Hoasen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\phuot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HaGiang\choquyettien.jpg" />
+    <Resource Include="HaGiang\mapileo.jpg" />
+    <Resource Include="HaGiang\moccucbac.jpg" />
+    <Resource Include="HaGiang\nuicamson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HaGiang\dongen.jpg" />
+    <Resource Include="HaGiang\honoong.jpg" />
+    <Resource Include="HaGiang\Lungcu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CaMau\bienkhailong.jpg" />
+    <Resource Include="CaMau\cua.jpg" />
+    <Resource Include="CaMau\damthituong.jpg" />
+    <Resource Include="CaMau\hau.jpg" />
+    <Resource Include="CaMau\ks.jpg" />
+    <Resource Include="CaMau\muicamau.jpg" />
+    <Resource Include="CaMau\song.jpg" />
+    <Resource Include="CaMau\vuonchim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\backgrSearch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Apachai\1.jpg" />
+    <Resource Include="Apachai\2.jpg" />
+    <Resource Include="Apachai\3.jpg" />
+    <Resource Include="Apachai\4.jpg" />
+    <Resource Include="Apachai\5.jpg" />
+    <Resource Include="Apachai\6.jpg" />
+    <Resource Include="Apachai\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PhuYen\a.jpg" />
+    <Resource Include="PhuYen\b.jpg" />
+    <Resource Include="PhuYen\c.jpg" />
+    <Resource Include="PhuYen\d.jpg" />
+    <Resource Include="PhuYen\e.jpg" />
+    <Resource Include="PhuYen\f.jpg" />
+    <Resource Include="PhuYen\g.jpg" />
+    <Resource Include="PhuYen\h.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SaPa\11.jpg" />
+    <Resource Include="SaPa\12.jpg" />
+    <Resource Include="SaPa\13.jpg" />
+    <Resource Include="SaPa\14.jpg" />
+    <Resource Include="SaPa\15.jpg" />
+    <Resource Include="SaPa\16.jpg" />
+    <Resource Include="SaPa\17.jpg" />
+    <Resource Include="SaPa\18.jpg" />
+    <Resource Include="SaPa\19.jpg" />
+    <Resource Include="SaPa\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LangSon\21.jpg" />
+    <Resource Include="LangSon\22.jpg" />
+    <Resource Include="LangSon\23.jpg" />
+    <Resource Include="LangSon\24.jpg" />
+    <Resource Include="LangSon\25.jpg" />
+    <Resource Include="LangSon\26.jpg" />
+    <Resource Include="LangSon\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CLC\31.jpg" />
+    <Resource Include="CLC\32.jpg" />
+    <Resource Include="CLC\33.jpg" />
+    <Resource Include="CLC\34.jpg" />
+    <Resource Include="CLC\35.jpg" />
+    <Resource Include="CLC\36.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="DaNang\d1.jpg" />
+    <Resource Include="DaNang\d2.jpg" />
+    <Resource Include="DaNang\d3.jpg" />
+    <Resource Include="DaNang\d4.jpg" />
+    <Resource Include="DaNang\d5.jpg" />
+    <Resource Include="DaNang\d6.jpg" />
+    <Resource Include="DaNang\d7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

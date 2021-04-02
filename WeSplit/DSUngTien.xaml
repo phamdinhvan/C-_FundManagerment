@@ -1,0 +1,95 @@
+﻿<Window x:Class="WeSplit.DSUngTien"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeSplit"
+        mc:Ignorable="d"
+        Title="Danh sách thành viên mượn tiền" Height="301.22" Width="484.146">
+    <FlowDocumentReader UseLayoutRounding="True" SnapsToDevicePixels="True" ViewingMode="Scroll">
+        <FlowDocumentReader.Resources>
+            <Style TargetType="TableCell">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </FlowDocumentReader.Resources>
+        <FlowDocument>
+            <Table CellSpacing="0">
+                <Table.Columns>
+                    <TableColumn/>
+                    <TableColumn/>
+                    <TableColumn/>
+                    <TableColumn/>
+                </Table.Columns>
+                <TableRowGroup>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">Người Mượn</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="1">
+                            <Paragraph FontWeight="Bold">Số tiền</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,1,1,1">
+                            <Paragraph FontWeight="Bold">Người Cho mượn</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph >De Thị Cao</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>30000</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>Trần Binz</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph >De Thị Cao</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>20000</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>Bùi Văn Châu</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph >Jolie Nguyễn</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>50000</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>Trần Binz</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph>Jolie Nguyễn</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>60000</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>Nguyễn Thế Bảo</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell BorderBrush="Black" BorderThickness="1,0,1,1">
+                            <Paragraph >Nguyễn Thế Bảo</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>5000</Paragraph>
+                        </TableCell>
+                        <TableCell BorderBrush="Black" BorderThickness="0,0,1,1">
+                            <Paragraph>Trần Binz</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+            </Table>
+        </FlowDocument>
+    </FlowDocumentReader>
+
+</Window>
